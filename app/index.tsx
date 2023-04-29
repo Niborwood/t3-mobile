@@ -10,7 +10,7 @@ SplashScreen.preventAutoHideAsync();
 
 export default function App() {
   const [fontsLoaded] = useFonts({
-    ClashDisplay: require("./assets/fonts/ClashDisplay-Variable.ttf"),
+    ClashDisplay: require("../assets/fonts/ClashDisplay-Variable.ttf"),
   });
 
   const onLayoutRootView = useCallback(async () => {
@@ -26,7 +26,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container} onLayout={onLayoutRootView}>
       <Text style={styles.text}>
-        Open up App.tsx to start working on your app!
+        Open up App.tsx to start working on your app!!!
       </Text>
       <StatusBar style="auto" />
     </SafeAreaView>
