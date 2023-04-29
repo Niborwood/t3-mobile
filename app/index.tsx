@@ -1,10 +1,10 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { StyleSheet, Text, View } from "react-native";
 
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import { useCallback } from "react";
+import { Link, Stack } from "expo-router";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -24,12 +24,11 @@ export default function App() {
   }
 
   return (
-    <SafeAreaView style={styles.container} onLayout={onLayoutRootView}>
-      <Text style={styles.text}>
-        Open up App.tsx to start working on your app!!!
-      </Text>
+    <View style={styles.container} onLayout={onLayoutRootView}>
+      <Text>What will be the top 3 of the day?</Text>
+      <Link href="/profile">Go to profile</Link>
       <StatusBar style="auto" />
-    </SafeAreaView>
+    </View>
   );
 }
 
@@ -40,5 +39,4 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  text: { fontFamily: "ClashDisplay", fontSize: 24 },
 });
