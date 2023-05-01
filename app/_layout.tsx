@@ -1,7 +1,4 @@
-import { StyleSheet } from "react-native";
-import Menu from "../components/Menu";
-import { Slot, Stack } from "expo-router";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { Stack } from "expo-router";
 
 export default function AppLayout() {
   return (
@@ -21,10 +18,3 @@ export default function AppLayout() {
     />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-  },
-});
